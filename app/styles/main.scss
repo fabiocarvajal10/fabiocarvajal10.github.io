@@ -4,10 +4,12 @@
 $blue: #303F9F;
 
 .main {
-  padding: 2em 0;
   font-family: 'Roboto', sans-serif;
   .container {
     max-width: 768px;
+    .resume-section {
+      padding: 2em 0;
+    }
   }
 }
 
@@ -22,10 +24,12 @@ $blue: #303F9F;
 .title {
   display: table;
   margin: auto;
+}
+
+.title, .title-xs {
   font-family: 'IBM Plex Serif', sans-serif;
   background: #fff;
   color: $blue;
-  text-align: center;
 }
 
 .highlist-container {
@@ -34,8 +38,12 @@ $blue: #303F9F;
 
 .contact-list {
   div {
-    &:first-child {border: none;} 
+    &:first-child {border: none;}  
     border-left: 1px solid #000;
+    @media screen and (max-width: 575px) {
+      border: none;
+      text-align: left;
+    } 
   }
 }
 
@@ -97,14 +105,18 @@ $blue: #303F9F;
     }
 
     .date {
-      padding-right: 0;
+      @media screen and (min-width: 768px) {
+        padding-right: 0;
+      }
       font-size: 1em;
       color: #757575;
       font-weight: 300;
     }
 
     .role-description {
-      padding-left: 0;
+      @media screen and (min-width: 768px) {
+        padding-left: 0;
+      }
       span {
         display: block;
         font-size: 1.2em;
