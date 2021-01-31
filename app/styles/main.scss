@@ -38,12 +38,12 @@ $blue: #303F9F;
 
 .contact-list {
   div {
-    &:first-child {border: none;}  
+    &:first-child {border: none;}
     border-left: 1px solid #000;
     @media screen and (max-width: 575px) {
       border: none;
       text-align: left;
-    } 
+    }
   }
 }
 
